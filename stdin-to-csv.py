@@ -28,7 +28,7 @@ if not sql_file_path.lower().endswith('.sql'):
 # Get the directory of the SQL file
 dir_path = os.path.dirname(sql_file_path)
 
-new_sql_file_path = os.path.join(dir_path, sql_file_path.rsplit("/", 1)[-1].rsplit(".", 1)[0] + "-blended.sql")
+new_sql_file_path = os.path.join(dir_path, sql_file_path.rsplit("/", 1)[-1].rsplit(".", 1)[0] + "-edited.sql")
 
 # Open the SQL file and read its content
 with open(sql_file_path, "r") as f:
